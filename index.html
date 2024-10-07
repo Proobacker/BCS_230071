@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Tech Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h2>Welcome to Tech Store</h2>
+        <p>Find the latest technology products with great deals!</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <!-- Product List -->
+    <section class="products" id="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$100.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$150.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="product3.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$200.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart" id="cart">
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <h3>Product 1</h3>
+                <p>Quantity: 1</p>
+                <p>Total: $100.00</p>
+                <button>Remove</button>
+            </div>
+            <!-- Add more cart items dynamically -->
+        </div>
+        <a href="#checkout" class="btn">Proceed to Checkout</a>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout" id="checkout">
+        <h2>Checkout</h2>
+        <form action="">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Shipping Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment" required>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cod">Cash on Delivery</option>
+            </select>
+
+            <button type="submit" class="btn">Place Order</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tech Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
